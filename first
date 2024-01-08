@@ -1,0 +1,12 @@
+function addNaturalNumbers(number1, number2) {
+  if (typeof number1 !== 'number' || typeof number2 !== 'number' || number1 < 0 || number2 < 0) {
+    console.error('자연수를 입력하세요.');
+    return;
+  }
+
+  return number1 + number2;
+}
+
+// 예제 사용
+const result = addNaturalNumbers(5, 7);
+console.log(`덧셈 결과: ${result}`);
